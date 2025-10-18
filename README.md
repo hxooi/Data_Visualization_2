@@ -33,7 +33,7 @@ Each visualization is interactive, color-coded, and designed with a consistent a
 - Typography: Clean layout using Pure.css and Verdana/Arial Black for visual hierarchy
 - Annotations: Key moments (like the 2021 unicorn boom) are labeled to guide the viewer
 - Layout: Balanced grid-based flow for readability and engagement
-- 
+  
 🧠 Tools & Technologies
 Vega-Lite (v6) for declarative visualization
 - Vega-Embed for integration in HTML
