@@ -1,0 +1,168 @@
+/* ========== Header ========== */
+.headerContainer {
+  position: relative;
+  text-align: center;
+}
+
+#headerImage {
+  width: 1500px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+
+#headerImage2 {
+  width: 1500px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Center text block on image */
+.headerText {
+  position: absolute;
+  top: 50%; /* center vertically */
+  left: 50%;
+  transform: translate(-50%, -50%); /* truly center it */
+  text-align: center;
+  color: darkslategrey;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Make sure title and subtitle are grouped closely */
+.headerText h1 {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 70px;
+  color: black;
+  margin: 0;
+  line-height: 1.1; /* reduce vertical gap */
+}
+
+/* Subtitle directly below title */
+.headerText p {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 10px;  /* small gap below title */
+  color: #2f4f4f;
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+/* Center heading text */
+#center {
+  text-align: center;
+  margin: 0;
+}
+
+/* ========== Divider ========== */
+hr {
+  display: block; border: none; border-top: 2px solid lightgrey;
+  width: 100%; margin: 40px 0;
+}
+
+/* ========== Global Font ========== */
+/* Everything uses Arial by default */
+body * { font-family: Arial, Helvetica, sans-serif; }
+
+/* Standout accents use extra-bold Arial Black (falls back to Arial) */
+#unicorn, #unicornh3, #hUnicorn, #unicornp, #red, #darkblue {
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: none; /* set to uppercase if you want even more punch */
+}
+
+/* ========== Accent Colors (keep your palette) ========== */
+#hUnicorn, #unicornp, #us, #china, #india, #fintech, #ai, #internet, #ecommerce, #cyber {
+  font-size: 22px; font-weight: bolder;
+}
+#hUnicorn, #unicornp { color: #C54B8C; }
+#us { color:#005A8D; }
+#china { color:#ef9869; }
+#india { color:#FF96AD; }
+#fintech { color:#C689C6; }
+#ai { color:#2541B2; }
+#internet { color:#FFAB76; }
+#ecommerce { color:#877798; }
+#cyber { color:#768eb7; }
+
+#unicorn   { color:#C54B8C; font-size:48px; text-align:center; }
+#unicornh3 { color:#C54B8C; font-size:28px; text-align:center; }
+#red       { color:#4169E1; font-size:42px; text-align:center; }
+#darkblue  { color:#150050; font-size:28px; text-align:center; }
+
+/* ========== Page ========== */
+.page { width:1500px; background-color:#F6F6F6; margin:auto; }
+
+/* ========== Chart Containers ========== */
+.vis-container { width:100%; align-items:center; align-content:center; }
+
+.donut-container   { width:100%; padding:50px 200px 20px 290px; }
+.map-container     { width:100%; padding:0 50px 20px 120px; }
+.alluvial-container{ width:100%; padding:20px 50px; }
+.treemap-container { width:100%; padding:20px 15px 20px 80px; }
+.lollipop-container{ width:100%; padding:20px 50px 0 15px; }
+.bar1-container    { width:100%; padding:15px 20px 0 80px; }
+.bar2-container    { width:100%; padding:15px 70px 0 0; }
+
+/* ========== Headings & Paragraphs ========== */
+/* Headings now use a serif font for a classic title look */
+h1, h2, h3 {
+  font-family: "Times New Roman", Georgia, "Times", serif;
+  color: #150050;
+  text-align: center;
+}
+h1 { font-weight: 900; font-size: 80px; color: black; }
+h2 { font-weight: 700; font-size: 42px; }
+h3 { font-weight: 700; font-size: 28px; }
+
+/* Optional: make your main custom title serif too */
+#unicorn, #unicornh3 {
+  font-family: "Times New Roman", Georgia, "Times", serif;
+}
+
+p  { font-size:22px; text-align:justify; padding:0 100px; }
+#footer { font-size:18px; text-align:center; }
+
+/* ========== Layout helpers ========== */
+.description-right { padding-left:20px; }
+.description-left  { padding-right:20px; }
+.pure-g { margin-bottom:40px; }
+.small-font { font-size:14px; }
+
+/* Optional: lighten default paragraph weight a touch for better contrast */
+p { font-weight: 400; }
+
+/* ========== Footer Overrides (so it truly centers) ========== */
+/* Add class="footer" to your footer's outer .pure-g */
+.footer .headerContainer { position: relative; }
+.footer .footerText{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center lines horizontally */
+  justify-content: center;  /* center within the image vertically */
+  gap: 6px;
+  text-align: center;
+  padding: 0 20px;          /* small safety padding */
+}
+
+/* Remove global p padding/justify inside footer */
+.footer p{
+  padding: 0;
+  margin: 4px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer .role { font-style: italic; }
+.footer .name { font-weight: 700; }
+.footer .links a { color: #2541B2; text-decoration: none; }
+.footer .links a:hover { text-decoration: underline; }
