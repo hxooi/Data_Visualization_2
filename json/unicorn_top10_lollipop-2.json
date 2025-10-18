@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 590,
+  "height": 600,
+  "title": {
+    "text": "Top 10 Most Valuable Unicorn Companies in the World",
+    "fontSize": 14,
+    "font": "Verdana"
+  },
+  "description": "Minimalist Lollipop chart with annotation for ByteDance",
+  "data": {
+    "name": "dataset",
+    "url": "https://raw.githubusercontent.com/hxooi/FIT3179/main/DataVisualization2/data/unicorn_top10_lollipop.csv"
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "Company": "ByteDance",
+            "y": 148,
+            "annotation": "ByteDance leads at ≈ US$140B. \nThis success comes from TikTok’s wide global reach\n and smart use of AI."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Verdana",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 30,
+        "dy": -6,
+        "lineBreak": "\n",
+        "background": "white",
+        "cornerRadius": 3,
+        "opacity": 0.95
+      },
+      "encoding": {
+        "x": { "field": "Company", "type": "nominal" },
+        "y": { "field": "y", "type": "quantitative" },
+        "text": { "field": "annotation" }
+      }
+    },
+    {
+      "description": "Lollipop Stick",
+      "mark": { "type": "bar", "width": 8 },
+      "encoding": {
+        "x": { "field": "Company", "type": "nominal" },
+        "y": {
+          "field": "Valuation ($B)",
+          "type": "quantitative",
+          "axis": { "grid": false },
+          "scale": { "domain": [0, 160] }
+        },
+        "color": {
+          "legend": null,
+          "field": "Industry",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Artificial Intelligence",
+              "Auto and transportation",
+              "Consumer and retail",
+              "Cybersecurity",
+              "Data management and analytics",
+              "E-commerce and direct-to-consumer",
+              "Edtech",
+              "Fintech",
+              "Hardware",
+              "Health",
+              "Internet software and services",
+              "Mobile and telecommunications",
+              "Other",
+              "Supply chain, logistics, and delivery",
+              "Travel"
+            ],
+            "range": [
+              "#357C3C","#85C88A","#E5CB9F","#FFCCB3","#FFAB76",
+              "#FE7E6D","#FFD372","#C689C6","#AC66CC","#A799B7",
+              "#B7657B","#93ABD3","#7692E4","#3F52E3","#2541B2"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "Lollipop",
+      "mark": { "type": "point", "tooltip": true, "size": 500, "filled": true, "opacity": 1 },
+      "encoding": {
+        "x": { "field": "Company", "type": "nominal" },
+        "y": { "field": "Valuation ($B)", "type": "quantitative" },
+        "color": {
+          "legend": null,
+          "field": "Industry",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Artificial Intelligence",
+              "Auto and transportation",
+              "Consumer and retail",
+              "Cybersecurity",
+              "Data management and analytics",
+              "E-commerce and direct-to-consumer",
+              "Edtech",
+              "Fintech",
+              "Hardware",
+              "Health",
+              "Internet software and services",
+              "Mobile and telecommunications",
+              "Other",
+              "Supply chain, logistics, and delivery",
+              "Travel"
+            ],
+            "range": [
+              "#357C3C","#85C88A","#E5CB9F","#FFCCB3","#FFAB76",
+              "#FE7E6D","#FFD372","#C689C6","#AC66CC","#A799B7",
+              "#B7657B","#93ABD3","#7692E4","#3F52E3","#2541B2"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "config": { "view": { "stroke": null }, "background": "#F6F6F6" }
+}
