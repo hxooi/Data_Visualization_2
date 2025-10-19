@@ -1106,7 +1106,7 @@
       "scale": "x",
       "domain": false,
       "ticks": false,
-      "labelPadding": 20,
+      "labelPadding": 22,
       "encode": {
         "labels": {
           "update": {
@@ -1114,7 +1114,7 @@
               "scale": "stackNames",
               "field": "value",
               "fontWeight": "bold",
-              "fontSize": 14
+              "fontSize": 22
             }
           }
         }
@@ -1133,7 +1133,7 @@
               "scale": "stackNames",
               "field": "value",
               "fontWeight": "bold",
-              "fontSize": 14
+              "fontSize": 22
             }
           }
         }
@@ -1212,6 +1212,7 @@
           "align": {"signal": "datum.rightLabel ? 'left' : 'right'"},
           "baseline": {"value": "middle"},
           "fontWeight": {"value": "bold"},
+          "fontSize": {"value": 13},
           "text": {
             "signal": "abs(datum.scaledY0-datum.scaledY1) > 13 ? datum.grpId : ''"
           }
