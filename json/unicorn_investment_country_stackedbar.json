@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": {
     "text": "Distribution of Investment by Country",
-    "fontSize": 14,
+    "fontSize": 22,
     "font": "Verdana"
   },
   "data": {

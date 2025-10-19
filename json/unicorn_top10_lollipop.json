@@ -4,7 +4,7 @@
   "height": 600,
   "title": {
     "text": "Top 10 Most Valuable Unicorn Companies in the World",
-    "fontSize": 14,
+    "fontSize": 22,
     "font": "Verdana"
   },
   "description": "Minimalist Lollipop chart with annotation for ByteDance",

@@ -4,7 +4,7 @@
   "height": 700,
   "title": {
     "text": "Distribution of Unicorn Companies by Industry",
-    "fontSize": 14,
+    "fontSize": 28,
     "font": "Verdana"
   },
   "data": {
