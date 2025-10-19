@@ -77,7 +77,7 @@ body * { font-family: Arial, Helvetica, sans-serif; }
 }
 
 /* ========== Accent Colors (keep your palette) ========== */
-#hUnicorn, #unicornp, #us, #china, #india, #fintech, #ai, #internet, #ecommerce, #cyber, #health {
+#hUnicorn, #unicornp, #us, #china, #india, #fintech, #ai, #internet, #ecommerce, #cyber, #health, #canva, #space {
   font-size: 26px; font-weight: bolder;
 }
 #hUnicorn, #unicornp { color: #C54B8C; }
@@ -85,11 +85,13 @@ body * { font-family: Arial, Helvetica, sans-serif; }
 #china { color:#ef9869; }
 #india { color:#FF96AD; }
 #fintech { color:#C689C6; }
-#ai { color:#2541B2; }
+#ai { color:#357C3C; }
 #internet { color:#B7657B; }
 #ecommerce { color:#FE7E6D; }
 #cyber { color:#FFCCB3; }
 #health { color:#A799B7; }
+#canva { color:#B7657B; }
+#space { color:#7692E4; }
 
 #unicorn   { color:#C54B8C; font-size:48px; text-align:center; }
 #unicornh3 { color:#C54B8C; font-size:28px; text-align:center; }
