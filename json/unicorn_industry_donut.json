@@ -187,7 +187,7 @@
             "direction": "horizontal",
             "columns": 2,
             "labelFont": "Verdana",
-            "labelFontSize": 18,
+            "labelFontSize": 25,
             "labelColor": "black",
             "symbolType": "circle",
             "symbolSize": 120,
